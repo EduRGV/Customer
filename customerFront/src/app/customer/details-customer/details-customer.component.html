@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="row mt-5" *ngIf="customer">
+      <div class="col-md-4 mx-auto">
+          <div class="card" style="width: 18rem;">
+              <div class="card-header text-center">
+                Detalle
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><b>Cliente ID: </b>{{customer.customerId}}</li>
+                <li class="list-group-item"><b>Nombre de la Empresa: </b>{{customer.companyName}}</li>
+                <li class="list-group-item"><b>Nombre de Contacto: </b>{{customer.contactName}}</li>
+                <li class="list-group-item"><b>Título del Contacto: </b>{{customer.contactTitle}}</li>
+                <li class="list-group-item"><b>Dirección: </b>{{customer.address}}</li>
+                <li class="list-group-item"><b>Ciudad: </b>{{customer.city}}</li>
+                <li class="list-group-item"><b>Region: </b>{{customer.region}}</li>
+                <li class="list-group-item"><b>Código Postal: </b>{{customer.postalCode}}</li>
+                <li class="list-group-item"><b>País: </b>{{customer.country}}</li>
+                <li class="list-group-item"><b>Teléfono: </b>{{customer.phone}}</li>
+                <li class="list-group-item"><b>Fax: </b>{{customer.fax}}</li>
+              </ul>
+              <div class="card-footer">
+                  <button class="btn btn-outline-primary btn-block" (click)="back()"><i class="fa-solid fa-backward"></i> Volver</button>
+              </div>
+            </div>
+            
+      </div>
+  </div>
+  </div>
